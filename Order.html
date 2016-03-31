@@ -1,0 +1,106 @@
+<Html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title> Home </title>
+</head>
+<body>
+<header> CossiePlay </header>
+<nav>
+<a href="index.html"> Home </a>
+<a href="Contact.html"> Contact information </a>
+<a href="Announcements.html"> Upcoming Announcements</a>
+<a href="Register.html"> Register for upcoming Events</a>
+<a href="Order.html"> Order a Costume </a>
+<a href="Cosplay.html"> What is Cosplay? </a>
+</nav>
+
+<h1> Register for new events </h1> </br>
+
+<form name="myForm" action="processdetails2.html"  onsubmit="return validateForm()" method="post" >
+First Name: </br>  <input type="text" name="firstname"> </br>
+Last Name: </br> <input type="text" name="lastname"> </br>
+Contact Number: </br> <input type="text" name="contactno"> </br>
+Suit: </br> <input type = "text" name="Suit"> </br>
+<input type="submit" name="submit" value="Submit" > </br>
+</form>
+<span id="Change">
+Please enter your name and contact number as well as the suit that you wish to be made and we will contact you when it is ready.
+</span> 
+
+<script>
+function validateForm() {
+     var complete = document.forms["myForm"]["firstname"].value;
+     if (complete == null || complete == "") {
+         alert("Name must be filled out");
+         return false;
+     }
+ }
+</script>
+</br>
+</br>
+<h2> Prices </h2>
+<table style="width:50%">
+<tr>
+<td> Costume </td>
+<td> Size </td>
+<td> Price </td>
+</tr>
+<tr>
+<td> Spiderman </td>
+<td> 12 </td>
+<td> $49 </td>
+</tr>
+<tr>
+<td> Elf </td>
+<td> 16 </td>
+<td> $35 </td>
+</tr>
+<tr>
+<td> Darth Vader </td>
+<td> M </td>
+<td> $149 </td>
+</tr>
+<tr>
+<td> Iron Man (with rocket boots) </td>
+<td> M </td>
+<td> $2500 </td>
+</tr>
+<tr>
+<td> Bayonetta </td>
+<td> 8 </td>
+<td> $300 </td>
+</tr>
+<tr>
+<td> Diablo 3 - Demon Hunter </td>
+<td> 10 </td>
+<td> $250 </td>
+</tr>
+<tr>
+<td> Harley Quinn </td> 
+<td> 18 </td>
+<td> $125 </td>
+</tr>
+<tr> 
+<td> Metroid - Samas Aran </td>
+<td> L </td>
+<td> $850 </td>
+</tr>
+<tr>
+<td> Peter Pan</td>
+<td> XS</td>
+<td> $49</td>
+</tr>
+<tr>
+<td> Princess Leia (white)</td>
+<td> 10</td>
+<td> $100</td>
+</tr>
+<tr>
+<td> Spock (Star Trek)</td>
+<td> S</td>
+<td> $1,235</td>
+</tr>
+</table>
+</body>
+
+</Html>
