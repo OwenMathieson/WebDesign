@@ -3,11 +3,19 @@ a {
 }
 
 header {
-	background-color: 3DFFEE;
+	background-color:  66B0FF;
 	padding-bottom: 30px;
 	padding-top: 30px;
 	text-align:center;
 	font-size: 30px;
+	
+}
+
+footer {
+	background-color: 66B0FF;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	font-size: 15px;
 	
 }
 
